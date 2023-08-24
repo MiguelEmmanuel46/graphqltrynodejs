@@ -1,0 +1,50 @@
+mkdir mongogql
+cd mongogql
+npm init
+npm i express express-graphql graphql-tool  rimraf @babel/polifill 
+npm i express express-graphql graphql-tool  rimraf @babel/polyfill 
+npm i --save-dev @babel/core @babel/cli
+npm i @babel/node @babel/preset-env nodemon
+cls
+npm run start
+npm i graphql-tools
+npm run start
+cls
+npm run start
+npm i graphql
+npm run start
+npm i
+cls
+npm run start
+npm install mongodb mongoose
+npm i mongodb
+npm i mongooose
+cls
+npm instakk
+cls
+npm i mongodb
+npm i mongoose
+npm install 
+npm run start
+cls
+npm cache clean
+npm cache clean --force
+npm install mongoose
+npm install --legacy-peer-deps
+npm install mongodb mongoose
+npm install mongoose
+npm install --save express
+npm install --save express-graphql
+npm install --save graphql
+npm install --save mongoose
+npm install --legacy-peer-deps
+npm install mongoose --legacy-peer-deps
+npm install mongodb --legacy-peer-deps
+cls
+npm run start
+cls
+npm run start
+cls
+npm run start
+cls
+doskey /HISTORY > history.txt

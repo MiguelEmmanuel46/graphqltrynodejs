@@ -1,0 +1,33 @@
+{
+  "name": "mongogql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -src -d -dist --source-maps",
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/node": "^7.22.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.22.10",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.8.0",
+    "graphql-tool": "^1.0.0",
+    "graphql-tools": "^9.0.0",
+    "mongodb": "^5.8.1",
+    "mongoose": "^7.4.4",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11"
+  }
+}
