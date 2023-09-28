@@ -1,45 +1,33 @@
-import { makeExecutableSchema } from 'graphql-tools';
-import { resolvers } from './resolvers';
+/*step01*/
+import { makeExecutableSchema } from "@graphql-tools/schema";
+import { resolvers } from "./resolvers";
 
 const typeDefs = `
     type Query{
-        hello:String
-        tasks: [Task]
-        search(_id : ID):  [Task]
-        Mascota: [Mascota]
+        hola:String
+        mascotas:[Mascotas]
     }
-    type Task {
-        _id: ID!
-        title: String!
-        descripcion: String
-
-    }
-    type Mascota {
-        _id: ID!
+    type Mascotas {
+        _id: ID
         nombre: String
         edad: Int
-        mascota: String
-
+        propietario: String
     }
-    input MascotaInput {       
+    input MascotaInput{
+        _id: ID
         nombre: String
         edad: Int
-        mascota: String
-    }
-    
-    input TaskInput {        
-        title: String!
+        propietario: String
     }
     type Mutation{
-        createTask(input: TaskInput) : Task
-        createMascotas(input: MascotaInput) : Mascota
+        createMascota(input: MascotaInput) : Mascotas
+        updateMascota(_id: ID, input: MascotaInput) : Mascotas
+        deleteMascota(_id: ID) : Mascotas
+        
     }
-
-   
 `;
 
 export default makeExecutableSchema({
     typeDefs: typeDefs,
     resolvers: resolvers
-});
-
+})

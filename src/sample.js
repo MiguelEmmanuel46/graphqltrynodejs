@@ -1,23 +1,14 @@
-export const task = [
-
+export const mascotas = [
     {
         _id: 0,
-        title: 'Hacer la tarea',
-        descripcion: 'Hacer la tarea de calculo'
-
+        nombre: "Chicho",
+        edad: 4
     },
     {
-        _id: 1,
-        title: 'Hacer la cama',
-        descripcion: 'Tender la cama'
-
-    },
-    {
-        _id: 2,
-        title: 'Lavar el perro',
-        descripcion: 'bañar al perro con shampoo'
-
+        _id: 0,
+        nombre: "Oliver",
+        edad: 4
     }
-
-
 ]
+
+//sequalize

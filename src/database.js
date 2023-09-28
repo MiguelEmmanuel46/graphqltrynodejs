@@ -5,7 +5,7 @@ export async function connect() {
         useNewUrlParser: true,
         useUnifiedTopology: true
         });
-        console.log("finciona (y)");
+        console.log("connected database Ok");
     } catch (error) {
         console.log(error);
         console.log("no conecta a la bd :c ");

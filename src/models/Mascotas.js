@@ -1,12 +1,12 @@
-import { Schema, model } from "mongoose";
+import { Schema, model } from "mongoose"
+
 const MascotasSchema = new Schema({
-    nombre:{
+    nombre: {
         type: String,
         required: true
     },
     edad: Number,
-    mascota: String
-});
-
+    propietario: String
+})
 
 export default model('Mascota', MascotasSchema);
